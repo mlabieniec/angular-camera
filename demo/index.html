@@ -13,16 +13,15 @@
             rtc="rtc"
             options="options"></camera>
 
-        <video id="rtcVideo"></video>
-        <div id="flashVideo"></div>
-
         <hr/>
         <div>
             <button id="captureBtn" ng-click="capture()">Capture</button>
             <button id="captureBurst" ng-click="burst()">Burst</button>
         </div>
         <hr/>
-        <div id="result"></div>
+        <div id="result" style="display: inline;">
+            <img ng-src="{{data}}" />
+        </div>
 
     </div>
 

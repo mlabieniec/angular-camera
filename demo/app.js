@@ -37,7 +37,7 @@ angular.module('angularCameraDemo', [
 
     $scope.capture = function() {
         $scope.rtc.capture(function (data) {
-            $('#result').append('<div class="imgs" style="display: inline;"><img src="' + data + '"></img></div>');
+            $scope.data = data;
         });
     };
 
@@ -49,7 +49,7 @@ angular.module('angularCameraDemo', [
             var i = 0;
 
             interval = setInterval(function () {
-                $('#loopImage').attr('src', data[i]);
+                $scope.data = data[i];
                 i += 1;
 
                 if (i === (options.frames.flash - 1)) {
