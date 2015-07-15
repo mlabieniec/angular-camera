@@ -11,7 +11,10 @@
 
         <camera
             rtc="rtc"
-            options="options"></camera>
+            options="options">
+            <video class="webcam-live" ng-show="rtc.type !== 'FLASH'"></video>
+            <div class="webcam-flash" ng-show="rtc.type === 'FLASH'"></div>
+        </camera>
 
         <hr/>
         <div>
@@ -25,7 +28,7 @@
 
     </div>
 
-    <script src="../angular-camera.min.js"></script>
+    <script src="../angular-camera.js"></script>
     <script src="app.js"></script>
 </body>
 

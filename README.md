@@ -6,7 +6,10 @@ Just include `'angular-camera'` in your angular application modules, than add to
 
 `<camera
 	rtc="rtc"
-	options="options"></camera>`
+	options="options">
+	<video class="webcam-live" ng-show="rtc.type !== 'FLASH'"></video>
+    <div class="webcam-flash" ng-show="rtc.type === 'FLASH'"></div>
+	</camera>`
 
 ### Options
 Options are sent directly to CamCapture, see demo/app.js for example. One thing to note is the location of the swf file. For most apps you should point to the location in your bower_components, i.e:

@@ -1429,7 +1429,8 @@
         .directive('camera',
             function() {
                 return {
-                    template:'<div><video class="webcam-live"></video><div class="webcam-flash"></div></div>',
+                    template:'<div ng-transclude></div>',
+                    transclude:true,
                     replace:true,
                     restrict:'E',
                     scope: {

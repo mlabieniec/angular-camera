@@ -61,6 +61,6 @@ angular.module('angularCameraDemo', [
     };
 
     $scope.$watch('rtc',function(rtc) {
-        console.log('rtc: ',rtc);
+        console.log('rtc: ',rtc)
     });
 });
