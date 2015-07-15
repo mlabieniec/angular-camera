@@ -1198,7 +1198,7 @@
                         flash: options.frames && options.frames.flash || 30
                     }
                 };
-                self.relativeSwfLocation = options.relativeSwfLocation || "/lib/jscam_canvas_only.swf";
+                self.relativeSwfLocation = options.relativeSwfLocation || "cam.swf";
                 self.canvasWidth = options.canvasWidth || 320;
                 self.canvasHeight = options.canvasHeight || 240;
                 self.displayWidth = options.displayWidth || 320;

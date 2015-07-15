@@ -10,7 +10,7 @@
     "ML <michaellabieniec@gmail.com>"
   ],
   "description": "An angular directive to work with a webcam using getUserMedia with flash fallback",
-  "main": "angular-camera.js",
+  "main": "angular-camera.min.js",
   "keywords": [
     "angular",
     "webcam"

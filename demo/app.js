@@ -8,7 +8,8 @@ angular.module('angularCameraDemo', [
     var interval = undefined;
 
     $scope.options = {
-        forceFlash: false,
+        forceFlash: true,
+        relativeSwfLocation:'/cam.swf',
         videoSelector: '.webcam-live',
         flashVideoSelector: ".webcam-flash",
         displayWidth: 320,
