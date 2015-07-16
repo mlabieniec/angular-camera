@@ -1434,8 +1434,6 @@
                     replace:true,
                     restrict:'E',
                     scope: {
-                        onReady: '&',
-                        onCapture: '&',
                         rtc: '=',
                         options: '='
                     },
