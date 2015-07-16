@@ -1,4 +1,4 @@
-### angular-camera
+### Angular Camera Directive
 An angular directive to render a web camera with either getUserMedia (if available) or flash. Also provides an interface (thanks to https://github.com/cthayur/CamCapture) for taking snapshots through flash and rtc.
 
 ### Usage
